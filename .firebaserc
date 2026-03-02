@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "tracksocial-151f1"
+  },
+  "targets": {
+    "tracksocial-151f1": {
+      "hosting": {
+        "skytrekapp": [
+          "skytrekapp"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
