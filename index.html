@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skytrek — Flight Logging for Pilots</title>
-  <meta name="description" content="Skytrek is the flight logging app for pilots who want to track, organize, and share their adventures. Import from SkyDemon, create trip maps, and share with the community.">
+  <title>Skytrek — Your Aviation Life, Beautifully Connected</title>
+  <meta name="description" content="Skytrek is the social flight logging app for pilots. Import from SkyDemon, ForeFlight, and Garmin Pilot. Log flights, create trip maps, and share with the aviation community.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Skytrek — Flight Logging for Pilots">
-  <meta property="og:description" content="Track, organize, and share your flights. Import from SkyDemon, create beautiful trip maps, and join the pilot community.">
+  <meta property="og:title" content="Skytrek — Your Aviation Life, Beautifully Connected">
+  <meta property="og:description" content="The social flight logging app for pilots. Import from SkyDemon, ForeFlight, and Garmin Pilot. 35+ screens. 100% free.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/screenshot-map-editor.webp">
+  <meta property="og:image" content="images/screenshot-feed.webp">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- ============ 1. Navigation ============ -->
   <nav class="nav" id="nav">
     <div class="nav__container">
       <a href="#" class="nav__logo">
@@ -38,121 +38,324 @@
       </button>
 
       <div class="nav__menu" id="navMenu">
-        <a href="#features" class="nav__link">Features</a>
-        <a href="#pilot-profile" class="nav__link">Pilot Profile</a>
-        <a href="#preview" class="nav__link">Preview</a>
-        <a href="#how-it-works" class="nav__link">How It Works</a>
+        <a href="#features" class="nav__link" data-section="features">Features</a>
+        <a href="#logbook" class="nav__link" data-section="pillars">Logbook</a>
+        <a href="#social" class="nav__link" data-section="social">Social</a>
+        <a href="#profile" class="nav__link" data-section="profile">Pilot Profile</a>
+        <a href="#how-it-works" class="nav__link" data-section="how-it-works">How It Works</a>
         <a href="#cta" class="nav__cta-link">Coming Soon</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- ============ 2. Hero ============ -->
   <section class="hero">
+    <div class="grid-bg"></div>
+    <div class="glow-orange hero__bg-glow-orange"></div>
+    <div class="glow-blue hero__bg-glow-blue"></div>
+
     <div class="hero__container">
       <div class="hero__content">
-        <h1 class="hero__title reveal">
-          Your Flight Story,<br>
-          <span class="hero__title-accent">Beautifully Told</span>
+        <h1 class="hero__title">
+          <span class="hero__word">Your</span>
+          <span class="hero__word">Aviation</span>
+          <span class="hero__word">Life,</span>
+          <span class="hero__title-accent">
+            <span class="hero__word gradient-text">Beautifully</span>
+            <span class="hero__word gradient-text">Connected</span>
+          </span>
         </h1>
-        <p class="hero__subtitle reveal reveal--delay-1">
-          Skytrek is the flight logging app for pilots who want to track, organize, and share their adventures.
+        <p class="hero__subtitle reveal reveal--delay-2">
+          The social flight logging app for pilots. Import from SkyDemon, ForeFlight, and Garmin Pilot — then log, organize, and share your adventures with the aviation community.
         </p>
-        <div class="hero__actions reveal reveal--delay-2">
+        <div class="hero__actions reveal reveal--delay-3">
           <a href="#cta" class="btn btn--primary">
             <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             Coming Soon on the App Store
           </a>
         </div>
       </div>
-      <div class="hero__image reveal reveal--delay-1">
-        <div class="phone-frame">
-          <img src="images/screenshot-feed.webp" alt="Skytrek social feed showing shared trip maps" loading="eager" width="300" height="650">
+
+      <div class="hero__visual">
+        <div class="hero__phone hero__phone--back phone-frame">
+          <img src="images/screenshot-profile.webp" alt="Pilot profile" loading="eager" width="280" height="607">
+        </div>
+        <div class="hero__phone phone-frame">
+          <img src="images/screenshot-feed.webp" alt="Skytrek social feed showing shared trip maps" loading="eager" width="280" height="607">
         </div>
       </div>
     </div>
-    <div class="hero__bg-glow"></div>
   </section>
 
-  <!-- Features -->
-  <section class="features" id="features">
-    <div class="features__container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Everything a Pilot Needs</h2>
-        <p class="section-subtitle">From importing your flight log to sharing it with the world — Skytrek has you covered.</p>
+  <!-- ============ 3. Stats Bar ============ -->
+  <section class="stats">
+    <div class="stats__container reveal">
+      <div class="stats__item">
+        <div class="stats__number gradient-text">35+</div>
+        <div class="stats__label">Screens</div>
       </div>
-      <div class="features__grid">
-        <div class="feature-card reveal">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <div class="stats__item">
+        <div class="stats__number gradient-text">3</div>
+        <div class="stats__label">EFB Integrations</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__number gradient-text">100%</div>
+        <div class="stats__label">Free</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__number gradient-text">Built</div>
+        <div class="stats__label">For Pilots</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. Feature Pillars ============ -->
+  <section class="pillars" id="features">
+    <div class="pillars__container">
+      <div class="section-header reveal">
+        <h2 class="section-title">More Than a Logbook</h2>
+        <p class="section-subtitle">From importing your flight track to sharing it with the world — Skytrek covers every step of the journey.</p>
+      </div>
+
+      <!-- Pillar A: Log Every Detail -->
+      <div class="pillar" id="logbook">
+        <div class="pillar__content reveal">
+          <span class="overline">Flight Logging</span>
+          <h3 class="pillar__title">Log Every Detail</h3>
+          <p class="pillar__desc">Import KML and GPX tracks from SkyDemon, ForeFlight, or Garmin Pilot with a single tap. Add photos, aircraft details from the ICAO database, and control who sees each flight.</p>
+          <div class="pillar__pills">
+            <span class="pill">KML & GPX Import</span>
+            <span class="pill">ICAO Aircraft Database</span>
+            <span class="pill">Up to 5 Photos</span>
+            <span class="pill">Flight Stats</span>
+            <span class="pill">Visibility Controls</span>
           </div>
-          <h3 class="feature-card__title">Import Flights</h3>
-          <p class="feature-card__desc">Seamlessly import flight tracks from SkyDemon EFB with a single tap through the share sheet.</p>
         </div>
-        <div class="feature-card reveal reveal--delay-1">
-          <div class="feature-card__icon">
+        <div class="pillar__image reveal reveal--delay-1">
+          <div class="phone-frame">
+            <img src="images/screenshot-trip-details.webp" alt="Trip details view with flight routes on map" loading="lazy" width="280" height="607">
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar B: Organize Your Adventures -->
+      <div class="pillar pillar--reversed">
+        <div class="pillar__content reveal">
+          <span class="overline">Trip Organization</span>
+          <h3 class="pillar__title">Organize Your Adventures</h3>
+          <p class="pillar__desc">Group flights into trips with multi-color route maps. Edit maps with draggable labels and text overlays, then export as Instagram Stories, square cards, or compact formats.</p>
+          <div class="pillar__pills">
+            <span class="pill">Multi-Flight Maps</span>
+            <span class="pill">Aggregate Stats</span>
+            <span class="pill">Draggable Labels</span>
+            <span class="pill">Instagram Story Export</span>
+            <span class="pill">Square & Compact Formats</span>
+          </div>
+        </div>
+        <div class="pillar__image reveal reveal--delay-1">
+          <div class="phone-frame">
+            <img src="images/screenshot-map-editor.webp" alt="Trip map editor with colored routes and labels" loading="lazy" width="280" height="607">
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar C: Join the Community -->
+      <div class="pillar" id="social">
+        <div class="pillar__content reveal">
+          <span class="overline">Social Platform</span>
+          <h3 class="pillar__title">Join the Community</h3>
+          <p class="pillar__desc">Browse a social feed of shared flights and trips. Give kudos, leave comments, follow fellow pilots, and share posts with photos. Direct message anyone in the community.</p>
+          <div class="pillar__pills">
+            <span class="pill">Social Feed</span>
+            <span class="pill">Kudos & Comments</span>
+            <span class="pill">Follow Pilots</span>
+            <span class="pill">Direct Messages</span>
+            <span class="pill">Photo Posts</span>
+          </div>
+        </div>
+        <div class="pillar__image reveal reveal--delay-1">
+          <div class="phone-frame">
+            <img src="images/screenshot-feed.webp" alt="Skytrek social feed" loading="lazy" width="280" height="607">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. Feature Grid (12 cards) ============ -->
+  <section class="feature-grid">
+    <div class="feature-grid__container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Everything You Need to Fly Social</h2>
+        <p class="section-subtitle">35+ screens of thoughtfully designed features for the modern pilot.</p>
+      </div>
+
+      <div class="feature-grid__grid">
+        <!-- 1. Search & Discover -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3 class="feature-grid__card-title">Search & Discover</h3>
+          <p class="feature-grid__card-desc">Algolia-powered search with an Instagram-style discover grid to find pilots, flights, and trips.</p>
+        </div>
+
+        <!-- 2. Direct Messaging -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="feature-grid__card-title">Direct Messaging</h3>
+          <p class="feature-grid__card-desc">Send text, photos, flights, and trips. Typing indicators and read receipts included.</p>
+        </div>
+
+        <!-- 3. Posts & Updates -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
           </div>
-          <h3 class="feature-card__title">Log Details</h3>
-          <p class="feature-card__desc">Add photos, aircraft registration, type info, and descriptions to every flight in your logbook.</p>
+          <h3 class="feature-grid__card-title">Posts & Updates</h3>
+          <p class="feature-grid__card-desc">Share posts with up to 5 photos, link previews, and YouTube embeds.</p>
         </div>
-        <div class="feature-card reveal reveal--delay-2">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+
+        <!-- 4. Kudos System -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
-          <h3 class="feature-card__title">Organize Trips</h3>
-          <p class="feature-card__desc">Group flights into trips with aggregate stats — total distance, duration, and aerodromes visited.</p>
+          <h3 class="feature-grid__card-title">Kudos System</h3>
+          <p class="feature-grid__card-desc">Tap to appreciate flights, trips, and posts from fellow pilots.</p>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+
+        <!-- 5. Comments -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
           </div>
-          <h3 class="feature-card__title">Trip Maps</h3>
-          <p class="feature-card__desc">See all your routes on beautiful multi-color maps with airport pins and labels.</p>
+          <h3 class="feature-grid__card-title">Comments</h3>
+          <p class="feature-grid__card-desc">Real-time conversations on any flight, trip, or post in the community.</p>
         </div>
-        <div class="feature-card reveal reveal--delay-1">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+
+        <!-- 6. Notifications -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
           </div>
-          <h3 class="feature-card__title">Export & Share</h3>
-          <p class="feature-card__desc">Create polished trip map images with custom labels and text overlays to share anywhere.</p>
+          <h3 class="feature-grid__card-title">Notifications</h3>
+          <p class="feature-grid__card-desc">Push and in-app notifications, grouped by type so nothing gets missed.</p>
         </div>
-        <div class="feature-card reveal reveal--delay-2">
-          <div class="feature-card__icon">
+
+        <!-- 7. Follow & Connect -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="feature-card__title">Social Feed</h3>
-          <p class="feature-card__desc">Browse and share trips with the pilot community. See where other aviators are flying.</p>
+          <h3 class="feature-grid__card-title">Follow & Connect</h3>
+          <p class="feature-grid__card-desc">Build your aviation network. Follow pilots and see their latest adventures.</p>
+        </div>
+
+        <!-- 8. Flight Import -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3 class="feature-grid__card-title">Flight Import</h3>
+          <p class="feature-grid__card-desc">One-tap import from SkyDemon, ForeFlight, and Garmin Pilot via KML & GPX.</p>
+        </div>
+
+        <!-- 9. Trip Maps -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          </div>
+          <h3 class="feature-grid__card-title">Trip Maps</h3>
+          <p class="feature-grid__card-desc">Multi-color routes, airport pins, and export overlays for sharing anywhere.</p>
+        </div>
+
+        <!-- 10. Aircraft Database -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+          </div>
+          <h3 class="feature-grid__card-title">Aircraft Database</h3>
+          <p class="feature-grid__card-desc">ICAO type autocomplete and registration logging for every flight.</p>
+        </div>
+
+        <!-- 11. Instagram Sharing -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+          </div>
+          <h3 class="feature-grid__card-title">Instagram Sharing</h3>
+          <p class="feature-grid__card-desc">Export trip maps as Story, Square, or Compact share cards ready for social media.</p>
+        </div>
+
+        <!-- 12. Privacy Controls -->
+        <div class="feature-grid__card">
+          <div class="feature-grid__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="feature-grid__card-title">Privacy Controls</h3>
+          <p class="feature-grid__card-desc">Set flights to Everyone or Just Me. Block and report for a safe community.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pilot Profile Feature -->
-  <section class="pilot-profile" id="pilot-profile">
-    <div class="pilot-profile__container">
-      <div class="pilot-profile__content reveal">
-        <h2 class="section-title">Your Own Pilot Profile Page</h2>
-        <p class="pilot-profile__desc">Every Skytrek pilot gets a public profile at <strong>mypilotprofile.com</strong> — a personal aviation page you can share with anyone. No app download needed to view it.</p>
-        <ul class="pilot-profile__list">
-          <li>Flight hours, distance, and trip stats at a glance</li>
-          <li>Public flights and trips with interactive maps</li>
-          <li>Aircraft flown and aerodromes visited</li>
-          <li>A shareable link that works on any device</li>
-        </ul>
-        <div class="pilot-profile__url-demo">
-          <div class="pilot-profile__browser">
-            <div class="pilot-profile__browser-dots">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="pilot-profile__browser-bar">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-              <a href="https://mypilotprofile.com/bonzoq" target="_blank" rel="noopener noreferrer">mypilotprofile.com/<strong>bonzoq</strong></a>
-            </div>
+  <!-- ============ 6. Pilot Profile Showcase ============ -->
+  <section class="profile" id="profile">
+    <div class="profile__container">
+      <div class="profile__content reveal">
+        <span class="overline">Your Digital Hangar</span>
+        <h2 class="profile__title">A Pilot Profile That Speaks for Itself</h2>
+        <p class="profile__desc">Every Skytrek pilot gets a public profile at <strong>mypilotprofile.com</strong> — a personal aviation page you can share with anyone. Choose from designations like Private Pilot, Commercial Pilot, Flight Instructor, Student Pilot, Mechanic, Aviation Enthusiast, or Spotter.</p>
+
+        <div class="profile__stats">
+          <div class="profile__stat">
+            <div class="profile__stat-number">47</div>
+            <div class="profile__stat-label">Flights</div>
+          </div>
+          <div class="profile__stat">
+            <div class="profile__stat-number">12</div>
+            <div class="profile__stat-label">Trips</div>
+          </div>
+          <div class="profile__stat">
+            <div class="profile__stat-number">142h</div>
+            <div class="profile__stat-label">Flight Time</div>
+          </div>
+          <div class="profile__stat">
+            <div class="profile__stat-number">8,400</div>
+            <div class="profile__stat-label">NM Flown</div>
+          </div>
+          <div class="profile__stat">
+            <div class="profile__stat-number">23</div>
+            <div class="profile__stat-label">Aerodromes</div>
+          </div>
+          <div class="profile__stat">
+            <div class="profile__stat-number">5</div>
+            <div class="profile__stat-label">Aircraft</div>
+          </div>
+        </div>
+
+        <div class="profile__badges">
+          <span class="pill">Private Pilot</span>
+          <span class="pill">Commercial Pilot</span>
+          <span class="pill">Flight Instructor</span>
+          <span class="pill">Student Pilot</span>
+        </div>
+
+        <div class="profile__browser">
+          <div class="profile__browser-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="profile__browser-bar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <a href="https://mypilotprofile.com/bonzoq" target="_blank" rel="noopener noreferrer">mypilotprofile.com/<strong>bonzoq</strong></a>
           </div>
         </div>
       </div>
-      <div class="pilot-profile__image reveal reveal--delay-1">
+
+      <div class="profile__image reveal reveal--delay-1">
         <div class="phone-frame">
           <img src="images/screenshot-profile.webp" alt="Pilot profile showing flight stats, trips, and aviation achievements" loading="lazy" width="280" height="607">
         </div>
@@ -160,57 +363,59 @@
     </div>
   </section>
 
-  <!-- App Preview / Screenshots -->
+  <!-- ============ 7. Screenshots Gallery ============ -->
   <section class="preview" id="preview">
     <div class="preview__container">
       <div class="section-header reveal">
-        <h2 class="section-title">See It in Action</h2>
-        <p class="section-subtitle">Designed for pilots, by a pilot. Clean, intuitive, and focused on what matters.</p>
+        <h2 class="section-title">Designed for the Cockpit, and Beyond</h2>
+        <p class="section-subtitle">Clean, intuitive, and focused on what matters. Here's a taste of what's inside.</p>
       </div>
-      <div class="preview__scroll">
-        <div class="preview__track">
-          <div class="preview__item reveal">
-            <div class="phone-frame phone-frame--small">
-              <img src="images/screenshot-feed.webp" alt="Social feed with shared trip maps" loading="lazy" width="270" height="585">
+      <div class="preview__scroll-wrap">
+        <div class="preview__scroll">
+          <div class="preview__track">
+            <div class="preview__item reveal">
+              <div class="phone-frame phone-frame--small">
+                <img src="images/screenshot-feed.webp" alt="Social feed with shared trip maps" loading="lazy" width="250" height="542">
+              </div>
+              <p class="preview__caption">Social Feed</p>
             </div>
-            <p class="preview__caption">Social Feed</p>
-          </div>
-          <div class="preview__item reveal reveal--delay-1">
-            <div class="phone-frame phone-frame--small">
-              <img src="images/screenshot-trip-details.webp" alt="Trip details with flight routes on map" loading="lazy" width="270" height="585">
+            <div class="preview__item reveal reveal--delay-1">
+              <div class="phone-frame phone-frame--small">
+                <img src="images/screenshot-trip-details.webp" alt="Trip details with flight routes on map" loading="lazy" width="250" height="542">
+              </div>
+              <p class="preview__caption">Trip Details</p>
             </div>
-            <p class="preview__caption">Trip Details</p>
-          </div>
-          <div class="preview__item reveal reveal--delay-2">
-            <div class="phone-frame phone-frame--small">
-              <img src="images/screenshot-map-editor.webp" alt="Trip map editor with colored routes and labels" loading="lazy" width="270" height="585">
+            <div class="preview__item reveal reveal--delay-2">
+              <div class="phone-frame phone-frame--small">
+                <img src="images/screenshot-map-editor.webp" alt="Trip map editor with colored routes and labels" loading="lazy" width="250" height="542">
+              </div>
+              <p class="preview__caption">Map Editor</p>
             </div>
-            <p class="preview__caption">Map Editor</p>
-          </div>
-          <div class="preview__item reveal reveal--delay-3">
-            <div class="phone-frame phone-frame--small">
-              <img src="images/screenshot-profile.webp" alt="Pilot profile with flight statistics" loading="lazy" width="270" height="585">
+            <div class="preview__item reveal reveal--delay-3">
+              <div class="phone-frame phone-frame--small">
+                <img src="images/screenshot-profile.webp" alt="Pilot profile with flight statistics" loading="lazy" width="250" height="542">
+              </div>
+              <p class="preview__caption">Pilot Profile</p>
             </div>
-            <p class="preview__caption">Pilot Profile</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works -->
+  <!-- ============ 8. How It Works ============ -->
   <section class="how-it-works" id="how-it-works">
     <div class="how-it-works__container">
       <div class="section-header reveal">
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-subtitle">Three simple steps from cockpit to community.</p>
+        <h2 class="section-title">Three Steps to the Skies</h2>
+        <p class="section-subtitle">From cockpit to community in minutes.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
           <div class="step__number">1</div>
           <div class="step__content">
             <h3 class="step__title">Fly & Record</h3>
-            <p class="step__desc">Use SkyDemon or your favourite EFB to record your flight track as you fly.</p>
+            <p class="step__desc">Use SkyDemon, ForeFlight, or Garmin Pilot to record your flight track as you fly.</p>
           </div>
         </div>
         <div class="step__connector reveal" aria-hidden="true">
@@ -219,8 +424,8 @@
         <div class="step reveal reveal--delay-1">
           <div class="step__number">2</div>
           <div class="step__content">
-            <h3 class="step__title">Import to Skytrek</h3>
-            <p class="step__desc">Share your flight log directly to Skytrek. Add photos, aircraft details, and a description.</p>
+            <h3 class="step__title">Import & Enhance</h3>
+            <p class="step__desc">Share your flight log to Skytrek. Add photos, aircraft details, and a description.</p>
           </div>
         </div>
         <div class="step__connector reveal" aria-hidden="true">
@@ -229,19 +434,21 @@
         <div class="step reveal reveal--delay-2">
           <div class="step__number">3</div>
           <div class="step__content">
-            <h3 class="step__title">Share Your Adventure</h3>
-            <p class="step__desc">Organize flights into trips, create beautiful map images, and share with the community.</p>
+            <h3 class="step__title">Share & Connect</h3>
+            <p class="step__desc">Organize flights into trips, export beautiful maps, and share with the community.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- ============ 9. CTA Section ============ -->
   <section class="cta" id="cta">
     <div class="cta__container reveal">
+      <div class="cta__orb cta__orb--1" aria-hidden="true"></div>
+      <div class="cta__orb cta__orb--2" aria-hidden="true"></div>
       <h2 class="cta__title">Ready for Takeoff?</h2>
-      <p class="cta__subtitle">Skytrek is coming soon to the App Store. Be the first to know when it launches.</p>
+      <p class="cta__subtitle">The sky is better when it's shared.</p>
       <a href="#" class="btn btn--primary btn--large">
         <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
         Coming Soon on the App Store
@@ -249,7 +456,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ============ 10. Footer ============ -->
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__brand">
@@ -259,7 +466,7 @@
           </svg>
           <span>Skytrek</span>
         </a>
-        <p class="footer__tagline">Flight logging for pilots who love to explore.</p>
+        <p class="footer__tagline">Your aviation life, beautifully connected.</p>
       </div>
       <div class="footer__links">
         <a href="/privacy/">Privacy Policy</a>
@@ -267,7 +474,7 @@
         <a href="mailto:massiveballz@proton.me">Contact</a>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2024–2025 Skytrek. All rights reserved.</p>
+        <p>&copy; 2024&ndash;2026 Skytrek. All rights reserved.</p>
       </div>
     </div>
   </footer>

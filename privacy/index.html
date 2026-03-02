@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Track Social</title>
-  <meta name="description" content="Privacy Policy for the Track Social application.">
+  <title>Privacy Policy — Skytrek</title>
+  <meta name="description" content="Privacy Policy for the Skytrek application.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +16,12 @@
 
     :root {
       --orange: #FC5200;
-      --dark: #141414;
-      --dark-card: #1c1c1e;
+      --dark: #0a0a0b;
+      --dark-card: #141416;
       --gray-100: #f5f5f7;
       --gray-200: #e5e5ea;
-      --gray-400: #aeaeb2;
-      --gray-600: #636366;
+      --gray-400: #8a8a8e;
+      --gray-600: #48484a;
       --white: #ffffff;
       --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     }
@@ -43,20 +43,8 @@
     .legal {
       max-width: 720px;
       margin: 0 auto;
-      padding: 80px 24px 120px;
+      padding: 60px 24px 120px;
     }
-
-    .legal__back {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.9rem;
-      color: var(--gray-400);
-      margin-bottom: 48px;
-      transition: color 0.2s;
-    }
-
-    .legal__back:hover { color: var(--white); text-decoration: none; }
 
     .legal__title {
       font-size: clamp(1.75rem, 4vw, 2.5rem);
@@ -103,95 +91,152 @@
       font-size: 0.8rem;
       color: var(--gray-600);
     }
+
+    .legal__footer-links {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .legal__footer-links a {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
   </style>
 </head>
 <body>
 
 <div class="legal">
-  <a href="/" class="legal__back">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-    Back to Home
-  </a>
 
   <h1 class="legal__title">Privacy Policy</h1>
-  <p class="legal__updated">Last updated: February 28, 2026</p>
+  <p class="legal__updated">Last updated: March 2, 2026</p>
 
   <h2>1. Introduction</h2>
-  <p>Welcome to Track Social ("we," "us," "our," or the "Company"). This Privacy Policy explains how we collect, use, store, share, and otherwise process your personal information and data when you use the Track Social application, website, and any related services (collectively, the "Service"). By accessing or using the Service, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.</p>
+  <p>Welcome to Skytrek ("we," "us," "our," or the "Company"). Skytrek is operated by an individual developer ("Operator"). This Privacy Policy explains how we collect, use, store, share, and otherwise process your personal information and data when you use the Skytrek mobile application, website (including mypilotprofile.com), and any related services (collectively, the "Service"). The Service is a social platform for pilots that includes flight logging, trip organization, social networking, messaging, user profiles, and content sharing features.</p>
+  <p>By downloading, installing, accessing, or using the Service, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree to this Privacy Policy, you must not access or use the Service.</p>
 
-  <h2>2. Information We Collect</h2>
+  <h2>2. Data Controller Information</h2>
+  <p>For the purposes of the EU General Data Protection Regulation ("GDPR"), the UK General Data Protection Regulation ("UK GDPR"), and other applicable data protection laws, the data controller responsible for your personal data is the Operator of Skytrek. For inquiries regarding data protection, please contact: <a href="mailto:massiveballz@proton.me">massiveballz@proton.me</a>.</p>
+
+  <h2>3. Information We Collect</h2>
   <p>We collect a broad range of information to provide and improve our Service. This includes, but is not limited to:</p>
   <ul>
-    <li><strong>Account Information:</strong> Name, email address, username, password, profile photo, and any other details you provide during registration or account setup.</li>
-    <li><strong>User Content:</strong> All content you create, upload, post, share, or otherwise make available through the Service, including but not limited to text, photos, images, videos, comments, messages, location data, flight data, routes, trip information, and any associated metadata.</li>
-    <li><strong>Usage Data:</strong> Information about how you interact with the Service, including pages visited, features used, actions taken, time spent, frequency of use, search queries, and click patterns.</li>
-    <li><strong>Device Information:</strong> Device type, operating system, unique device identifiers, browser type, IP address, mobile network information, and hardware settings.</li>
-    <li><strong>Location Data:</strong> Precise and approximate geographic location data from your device, GPS data, flight tracks, route information, and location-tagged content.</li>
-    <li><strong>Communications:</strong> Any messages, feedback, support requests, or other communications you send to us or through the Service.</li>
-    <li><strong>Third-Party Data:</strong> Information received from third-party services you connect to your account, including EFB applications, social media platforms, and other integrated services.</li>
-    <li><strong>Automatically Collected Data:</strong> Cookies, web beacons, pixels, analytics data, crash reports, performance logs, and similar tracking technologies.</li>
+    <li><strong>Account Information:</strong> Name, email address, username, password, profile photo, pilot designation (e.g. Private Pilot, Commercial Pilot, Flight Instructor, Student Pilot, Mechanic, Aviation Enthusiast, Spotter), and any other details you provide during registration or account setup.</li>
+    <li><strong>User Content:</strong> All content you create, upload, post, share, or otherwise make available through the Service, including but not limited to text, photos, images, videos, comments, messages (including direct messages), kudos, posts, location data, flight data, flight tracks (KML/GPX files), routes, trip information, map data, aircraft information, and any associated metadata.</li>
+    <li><strong>Social Interaction Data:</strong> Information about your social connections and interactions, including follows, followers, kudos given/received, comments, direct messages, typing indicators, read receipts, blocked users, and reported content.</li>
+    <li><strong>Usage Data:</strong> Information about how you interact with the Service, including pages and screens visited, features used, actions taken, time spent, frequency of use, search queries (including Algolia-powered searches), click and tap patterns, notification interactions, and navigation paths.</li>
+    <li><strong>Device Information:</strong> Device type, operating system and version, unique device identifiers (including advertising identifiers), browser type, IP address, mobile network information, hardware settings, device language, and time zone.</li>
+    <li><strong>Location Data:</strong> Precise and approximate geographic location data from your device, GPS data, flight tracks, route information, airport and aerodrome location data, and location-tagged content.</li>
+    <li><strong>EFB and Third-Party Data:</strong> Information received from Electronic Flight Bag (EFB) applications you connect to the Service, including SkyDemon, ForeFlight, and Garmin Pilot, as well as data from any other third-party services you integrate with your account.</li>
+    <li><strong>Communications:</strong> Any messages, feedback, support requests, or other communications you send to us or through the Service, including the content of direct messages between users.</li>
+    <li><strong>Automatically Collected Data:</strong> Cookies, web beacons, pixels, analytics data, crash reports, performance logs, push notification tokens, and similar tracking technologies.</li>
   </ul>
 
-  <h2>3. How We Use Your Information</h2>
+  <h2>4. Legal Bases for Processing (EEA/UK Users)</h2>
+  <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, we process your personal data on the following legal bases under the GDPR and UK GDPR:</p>
+  <ul>
+    <li><strong>Performance of a Contract (Article 6(1)(b)):</strong> Processing necessary to provide the Service to you, including account creation, flight logging, social features, messaging, and profile management.</li>
+    <li><strong>Legitimate Interests (Article 6(1)(f)):</strong> Processing necessary for our legitimate interests, including improving and developing the Service, ensuring security and preventing fraud, analytics, and marketing our Service, where these interests are not overridden by your data protection rights.</li>
+    <li><strong>Consent (Article 6(1)(a)):</strong> Where you have given clear consent for us to process your personal data for specific purposes, such as push notifications, location tracking, and marketing communications. You may withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal.</li>
+    <li><strong>Legal Obligation (Article 6(1)(c)):</strong> Processing necessary to comply with a legal obligation to which we are subject.</li>
+  </ul>
+
+  <h2>5. How We Use Your Information</h2>
   <p>We may use the information we collect for any purpose related to operating, maintaining, and improving the Service, including but not limited to:</p>
   <ul>
-    <li>Providing, personalizing, and improving the Service and user experience.</li>
+    <li>Providing, personalizing, and improving the Service and user experience, including the social feed, search and discover features, messaging, notifications, and pilot profiles.</li>
+    <li>Facilitating social interactions between users, including displaying your public content, profile information, and activity to other users of the Service.</li>
+    <li>Operating the public pilot profile pages at mypilotprofile.com.</li>
     <li>Developing new products, services, features, and functionality.</li>
     <li>Creating, training, testing, and improving machine learning models, algorithms, and artificial intelligence systems.</li>
     <li>Conducting research, analytics, and statistical analysis.</li>
     <li>Generating aggregated, de-identified, or anonymized datasets for any purpose.</li>
     <li>Displaying, distributing, and promoting user content within the Service and on third-party platforms.</li>
-    <li>Communicating with you, including sending service announcements, updates, promotional materials, and marketing communications.</li>
+    <li>Sending push notifications, in-app notifications, service announcements, updates, promotional materials, and marketing communications.</li>
     <li>Enforcing our Terms of Use and other policies.</li>
     <li>Complying with legal obligations and responding to lawful requests.</li>
     <li>Protecting the rights, safety, and property of the Company, our users, and the public.</li>
     <li>Any other purpose disclosed at the time of collection or with your consent.</li>
   </ul>
 
-  <h2>4. Sharing and Disclosure of Information</h2>
+  <h2>6. Sharing and Disclosure of Information</h2>
   <p>We may share your information with third parties in the following circumstances:</p>
   <ul>
-    <li><strong>Service Providers:</strong> Third-party vendors, consultants, and service providers who perform services on our behalf, including hosting, analytics, customer support, and marketing.</li>
+    <li><strong>Other Users:</strong> Depending on your privacy settings, your profile information, flights, trips, posts, comments, kudos, and other content may be visible to other users of the Service. Public profiles are visible at mypilotprofile.com to anyone on the internet. Direct messages are visible to the participants of those conversations.</li>
+    <li><strong>Service Providers:</strong> Third-party vendors, consultants, and service providers who perform services on our behalf, including cloud hosting (e.g. Firebase/Google Cloud), search infrastructure (e.g. Algolia), analytics, push notification delivery, customer support, and marketing. These providers may be located outside your country of residence.</li>
     <li><strong>Business Partners:</strong> Partners with whom we collaborate to offer joint products, services, or promotions.</li>
-    <li><strong>Affiliates:</strong> Our parent company, subsidiaries, and affiliated entities.</li>
     <li><strong>Advertising Partners:</strong> Third-party advertising and marketing partners for targeted advertising purposes.</li>
-    <li><strong>Business Transfers:</strong> In connection with any merger, acquisition, sale of assets, financing, or transfer of all or a portion of our business.</li>
-    <li><strong>Legal Requirements:</strong> When required by law, regulation, legal process, or governmental request.</li>
+    <li><strong>Business Transfers:</strong> In connection with any merger, acquisition, sale of assets, financing, bankruptcy, dissolution, or transfer of all or a portion of our business.</li>
+    <li><strong>Legal Requirements:</strong> When required by law, regulation, legal process, or governmental request, including requests from law enforcement agencies in any jurisdiction.</li>
     <li><strong>Protection of Rights:</strong> To protect and defend the rights, property, or safety of the Company, our users, or the public.</li>
     <li><strong>With Your Consent:</strong> When you have given us consent to share your information.</li>
     <li><strong>Aggregated or De-Identified Data:</strong> We may share aggregated or de-identified information that cannot reasonably be used to identify you, without restriction.</li>
   </ul>
 
-  <h2>5. Data Retention</h2>
-  <p>We retain your information for as long as we deem necessary or useful for any legitimate business purpose, even after you stop using the Service or delete your account. We may retain and use your information as needed to comply with legal obligations, resolve disputes, enforce agreements, and for research and development purposes. Aggregated and de-identified data may be retained indefinitely.</p>
+  <h2>7. International Data Transfers</h2>
+  <p>Your information may be transferred to, stored, and processed in any country where we or our service providers maintain facilities, including the United States, the European Economic Area, and other jurisdictions. These countries may have data protection laws that are different from the laws of your country of residence.</p>
+  <p>If you are located in the EEA, UK, or Switzerland, we rely on the following transfer mechanisms for transfers of personal data to countries outside the EEA/UK that have not been deemed to provide an adequate level of data protection: (a) Standard Contractual Clauses approved by the European Commission or UK Information Commissioner's Office, as applicable; (b) the recipient's certification under an approved framework; or (c) your explicit consent to the transfer. By using the Service, you acknowledge and consent to the transfer of your information as described in this section.</p>
 
-  <h2>6. Your Content and Data Rights</h2>
-  <p>By using the Service, you grant us a worldwide, perpetual, irrevocable, royalty-free, fully paid-up, transferable, sublicensable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, publicly perform, and publicly display your content and data in any media or format, whether now known or hereafter developed, for any purpose whatsoever. This license survives termination of your account or this Privacy Policy.</p>
+  <h2>8. Data Retention</h2>
+  <p>We retain your information for as long as we deem necessary or useful for any legitimate business purpose, including after you stop using the Service or delete your account. We may retain and use your information as needed to comply with legal obligations, resolve disputes, enforce agreements, and for research and development purposes. Aggregated and de-identified data may be retained indefinitely. User content that has been shared publicly or with other users may continue to exist on the Service or in other users' records even after your account is deleted.</p>
 
-  <h2>7. Security</h2>
-  <p>We implement reasonable administrative, technical, and physical safeguards to help protect your information. However, no method of transmission over the Internet or electronic storage is completely secure. We cannot guarantee the absolute security of your information, and you acknowledge that you provide your information at your own risk.</p>
+  <h2>9. Your Content and Data License</h2>
+  <p>By using the Service, you grant us a worldwide, perpetual, irrevocable, royalty-free, fully paid-up, transferable, sublicensable (through multiple tiers) license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, publicly perform, and publicly display your content and data in any media or format, whether now known or hereafter developed, for any purpose whatsoever. This license survives termination of your account or this Privacy Policy.</p>
 
-  <h2>8. Children's Privacy</h2>
-  <p>The Service is not directed to children under the age of 13 (or the applicable age in your jurisdiction). We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child, we will take steps to delete such information.</p>
+  <h2>10. Your Rights (EEA/UK/Swiss Users)</h2>
+  <p>If you are located in the European Economic Area, United Kingdom, or Switzerland, you have the following rights under applicable data protection law. To exercise these rights, please contact us at <a href="mailto:massiveballz@proton.me">massiveballz@proton.me</a>. We will respond to your request within the timeframes required by applicable law (generally within one month, extendable by a further two months where necessary).</p>
+  <ul>
+    <li><strong>Right of Access (Article 15 GDPR):</strong> You have the right to request confirmation of whether we process your personal data and to obtain a copy of such data.</li>
+    <li><strong>Right to Rectification (Article 16 GDPR):</strong> You have the right to request correction of inaccurate personal data.</li>
+    <li><strong>Right to Erasure (Article 17 GDPR):</strong> You have the right to request deletion of your personal data in certain circumstances. Please note that we may retain certain data as permitted by law, and content shared with or copied by other users may not be fully erasable.</li>
+    <li><strong>Right to Restriction of Processing (Article 18 GDPR):</strong> You have the right to request restriction of processing of your personal data in certain circumstances.</li>
+    <li><strong>Right to Data Portability (Article 20 GDPR):</strong> You have the right to receive your personal data in a structured, commonly used, machine-readable format and to transmit it to another controller.</li>
+    <li><strong>Right to Object (Article 21 GDPR):</strong> You have the right to object to processing of your personal data based on legitimate interests, including profiling. You also have the right to object to processing for direct marketing purposes at any time.</li>
+    <li><strong>Right to Withdraw Consent:</strong> Where processing is based on consent, you may withdraw your consent at any time without affecting the lawfulness of processing based on consent before its withdrawal.</li>
+    <li><strong>Right to Lodge a Complaint:</strong> You have the right to lodge a complaint with a supervisory authority in the EU/EEA Member State of your habitual residence, place of work, or place of the alleged infringement.</li>
+  </ul>
+  <p>We may require verification of your identity before processing your request. In certain cases, we may charge a reasonable fee or decline requests that are manifestly unfounded or excessive.</p>
 
-  <h2>9. International Data Transfers</h2>
-  <p>Your information may be transferred to, stored, and processed in any country where we or our service providers maintain facilities. By using the Service, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection rules.</p>
+  <h2>11. Your Rights (US Users)</h2>
+  <p>Depending on your state of residence, you may have additional privacy rights under applicable US state privacy laws, including the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA), the Virginia Consumer Data Protection Act (VCDPA), the Colorado Privacy Act (CPA), the Connecticut Data Privacy Act (CTDPA), and similar state laws. These rights may include:</p>
+  <ul>
+    <li>The right to know what personal information we collect, use, disclose, and sell/share.</li>
+    <li>The right to request deletion of your personal information.</li>
+    <li>The right to opt out of the sale or sharing of your personal information.</li>
+    <li>The right to correct inaccurate personal information.</li>
+    <li>The right to limit use of sensitive personal information.</li>
+    <li>The right to non-discrimination for exercising your privacy rights.</li>
+  </ul>
+  <p>To exercise any of these rights, please contact us at <a href="mailto:massiveballz@proton.me">massiveballz@proton.me</a>. We do not discriminate against users who exercise their privacy rights.</p>
 
-  <h2>10. Third-Party Services</h2>
-  <p>The Service may contain links to or integrate with third-party services. We are not responsible for the privacy practices of these third parties. We encourage you to review the privacy policies of any third-party services you access.</p>
+  <h2>12. Security</h2>
+  <p>We implement reasonable administrative, technical, and physical safeguards designed to help protect your information. However, no method of transmission over the Internet or electronic storage is completely secure. We cannot and do not guarantee the absolute security of your information. You acknowledge that you provide your information at your own risk. In the event of a data breach that affects your personal data, we will notify the relevant supervisory authorities and affected individuals as required by applicable law.</p>
 
-  <h2>11. Cookies and Tracking Technologies</h2>
-  <p>We use cookies, web beacons, pixels, and similar tracking technologies to collect information, personalize your experience, and deliver targeted advertising. By using the Service, you consent to our use of these technologies. You may disable cookies in your browser settings, but doing so may affect the functionality of the Service.</p>
+  <h2>13. Children's Privacy</h2>
+  <p>The Service is not directed to children under the age of 13 (or 16 in the EEA/UK where applicable). We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected personal information from a child under the applicable minimum age, we will take commercially reasonable steps to delete such information. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us.</p>
 
-  <h2>12. Changes to This Privacy Policy</h2>
-  <p>We reserve the right to update or modify this Privacy Policy at any time, at our sole discretion, without prior notice. Changes become effective immediately upon posting. Your continued use of the Service after any changes constitutes your acceptance of the revised Privacy Policy. We encourage you to review this page periodically.</p>
+  <h2>14. Third-Party Services</h2>
+  <p>The Service may contain links to or integrate with third-party services, including EFB applications (SkyDemon, ForeFlight, Garmin Pilot), social media platforms, and other services. We are not responsible for the privacy practices, content, or security of these third parties. We encourage you to review the privacy policies of any third-party services you access. Information you share with third-party services is subject to those services' own terms and privacy policies.</p>
 
-  <h2>13. Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+  <h2>15. Cookies and Tracking Technologies</h2>
+  <p>We use cookies, web beacons, pixels, local storage, and similar tracking technologies to collect information, personalize your experience, and deliver targeted content and advertising. By using the Service, you consent to our use of these technologies to the extent permitted by applicable law. You may manage your cookie preferences through your browser or device settings; however, disabling cookies may affect the functionality of the Service.</p>
+
+  <h2>16. Automated Decision-Making</h2>
+  <p>We may use automated decision-making, including algorithmic content curation and recommendation systems, to personalize the Service. This includes determining what content appears in your social feed, search results, and discover sections. These automated processes do not produce legal effects concerning you or similarly significantly affect you.</p>
+
+  <h2>17. Changes to This Privacy Policy</h2>
+  <p>We reserve the right to update or modify this Privacy Policy at any time, at our sole discretion. Changes become effective immediately upon posting the revised Privacy Policy within the Service or on our website. Where required by applicable law, we will provide notice of material changes (e.g. via in-app notification or email). Your continued use of the Service after any changes constitutes your acceptance of the revised Privacy Policy. We encourage you to review this page periodically.</p>
+
+  <h2>18. Contact Us</h2>
+  <p>If you have any questions about this Privacy Policy, wish to exercise your data protection rights, or have a complaint, please contact us at:</p>
   <p><a href="mailto:massiveballz@proton.me">massiveballz@proton.me</a></p>
 
   <div class="legal__footer">
-    <p>&copy; 2024–2026 Track Social. All rights reserved.</p>
+    <p>&copy; 2024&ndash;2026 Skytrek. All rights reserved.</p>
+    <div class="legal__footer-links">
+      <a href="/terms/">Terms of Use</a>
+      <a href="mailto:massiveballz@proton.me">Contact</a>
+    </div>
   </div>
 </div>
 
