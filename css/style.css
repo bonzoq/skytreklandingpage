@@ -737,7 +737,7 @@ body.loaded .hero__word {
    6. Pilot Profile Showcase
    ======================================== */
 .profile {
-  padding: var(--section-gap) 24px;
+  padding: 0 24px var(--section-gap);
   position: relative;
   overflow: hidden;
 }
