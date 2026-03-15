@@ -1,8 +1,8 @@
-# TrackSocial (Skytrek) - Deep Research Report
+# TrackSocial (SkyTrek) - Deep Research Report
 
 ## 1. Project Overview
 
-**TrackSocial** is an iOS app branded as **"Skytrek"** -- a flight logging and social sharing platform for pilots. It allows users to import flight tracks from Electronic Flight Bag (EFB) software (primarily SkyDemon), view them on maps, attach metadata (aircraft details, photos, descriptions), organize flights into trips, and share trip maps as polished images.
+**TrackSocial** is an iOS app branded as **"SkyTrek"** -- a flight logging and social sharing platform for pilots. It allows users to import flight tracks from Electronic Flight Bag (EFB) software (primarily SkyDemon), view them on maps, attach metadata (aircraft details, photos, descriptions), organize flights into trips, and share trip maps as polished images.
 
 - **Created by:** Marcin Kmiec
 - **Created on:** November 1, 2024
@@ -181,7 +181,7 @@ An enum with two cases:
 ### 5.2 KML Import Flow (Primary Method)
 
 1. User opens a flight log in **SkyDemon** EFB
-2. User taps "Explore in Google Earth" and selects "Skytrek" from the share sheet
+2. User taps "Explore in Google Earth" and selects "SkyTrek" from the share sheet
 3. The **TrackSocialShare** extension activates:
    - Receives the KML file via `NSExtensionItem`
    - Saves it to the shared App Group container (`group.tracksocial1`)

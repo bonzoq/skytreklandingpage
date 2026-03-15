@@ -1,4 +1,4 @@
-// Skytrek — Interactions
+// SkyTrek — Interactions
 (function () {
   'use strict';
 
