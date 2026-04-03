@@ -661,6 +661,112 @@ body.loaded .hero__word {
 }
 
 /* ========================================
+   HUD Video Overlays
+   ======================================== */
+.hud {
+  padding: var(--section-gap) 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hud::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(252, 82, 0, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hud__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hud__title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.hud__desc {
+  font-size: 1.05rem;
+  color: var(--gray-400);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.hud__styles {
+  margin-bottom: 32px;
+}
+
+.hud__styles-heading,
+.hud__feature-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.hud__style-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hud__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.hud__feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hud__feature-list li {
+  font-size: 0.9rem;
+  color: var(--gray-400);
+  line-height: 1.5;
+  padding-left: 20px;
+  position: relative;
+}
+
+.hud__feature-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange);
+  opacity: 0.6;
+}
+
+.hud__video {
+  display: flex;
+  justify-content: center;
+}
+
+.hud__video .phone-frame video {
+  border-radius: 28px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========================================
    5. Feature Grid (12 cards)
    ======================================== */
 .feature-grid {
@@ -1213,6 +1319,24 @@ body.loaded .hero__word {
     order: -1;
   }
 
+  .hud__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 48px;
+  }
+
+  .hud__video {
+    order: -1;
+  }
+
+  .hud__style-list {
+    justify-content: center;
+  }
+
+  .hud__features {
+    text-align: left;
+  }
+
   .feature-grid__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1358,6 +1482,12 @@ body.loaded .hero__word {
   .pillar {
     gap: 36px;
     margin-bottom: 80px;
+  }
+
+  /* HUD */
+  .hud__features {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   /* Feature grid */
